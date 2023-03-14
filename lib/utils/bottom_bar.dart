@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:slicing_ui/ui/home_screen.dart';
 import 'package:slicing_ui/ui/info_screen.dart';
 import 'package:slicing_ui/ui/signin_screen.dart';
+import 'package:slicing_ui/ui/wallet_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
-    const SignIn(),
+    const WalletPage(),
     const PersonalInfo(),
   ];
 
@@ -56,7 +57,7 @@ class _BottomBarState extends State<BottomBar> {
           const BottomNavigationBarItem(
               icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
-              label: 'Search'),
+              label: 'Wallet'),
           const BottomNavigationBarItem(
               icon: const Icon(FluentSystemIcons.ic_fluent_ticket_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_ticket_filled),
