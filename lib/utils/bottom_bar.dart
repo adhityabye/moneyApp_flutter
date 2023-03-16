@@ -8,6 +8,8 @@ import 'package:slicing_ui/ui/info_screen.dart';
 import 'package:slicing_ui/ui/signin_screen.dart';
 import 'package:slicing_ui/ui/wallet_screen.dart';
 
+import '../ui/cashback_screen.dart';
+
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
 
@@ -20,7 +22,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
     const WalletPage(),
-    const PersonalInfo(),
+    const CashBackPage(),
   ];
 
   void _onItemTapped(int index) {
