@@ -95,22 +95,17 @@ class CashBackPage extends StatelessWidget {
                     CashBack(
                       title: "Fund Transfer",
                       percentage: "20%",
+                      isColor: true,
                     ),
                     const Gap(10),
                     CashBack(
-                      title: "Online Shopping",
-                      percentage: "43%",
-                    ),
+                        title: "Online Shopping",
+                        percentage: "43%",
+                        isColor: false),
                     const Gap(10),
-                    CashBack(
-                      title: "Food",
-                      percentage: "65%",
-                    ),
+                    CashBack(title: "Food", percentage: "65%", isColor: false),
                     const Gap(10),
-                    CashBack(
-                      title: "Fuel",
-                      percentage: "37%",
-                    ),
+                    CashBack(title: "Fuel", percentage: "37%", isColor: false),
                     const Gap(30),
                     Row(
                       children: [
@@ -122,24 +117,20 @@ class CashBackPage extends StatelessWidget {
                     ),
                     const Gap(20),
                     CashBack(
-                      title: "Health",
-                      percentage: "20%",
-                    ),
+                        title: "Health", percentage: "20%", isColor: false),
                     const Gap(10),
                     CashBack(
-                      title: "Travel",
-                      percentage: "16%",
-                    ),
+                        title: "Travel", percentage: "16%", isColor: false),
                     const Gap(10),
                     CashBack(
-                      title: "Fund Transfer",
-                      percentage: "20%",
-                    ),
+                        title: "Fund Transfer",
+                        percentage: "20%",
+                        isColor: false),
                     const Gap(10),
                     CashBack(
-                      title: "Fund Transfer",
-                      percentage: "19%",
-                    ),
+                        title: "Fund Transfer",
+                        percentage: "19%",
+                        isColor: false),
                   ],
                 ),
               ],
