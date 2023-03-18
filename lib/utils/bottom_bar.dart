@@ -9,6 +9,7 @@ import 'package:slicing_ui/ui/signin_screen.dart';
 import 'package:slicing_ui/ui/wallet_screen.dart';
 
 import '../ui/cashback_screen.dart';
+import '../ui/limit_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -23,6 +24,7 @@ class _BottomBarState extends State<BottomBar> {
     const HomePage(),
     const WalletPage(),
     const CashBackPage(),
+    const Limitspage(),
   ];
 
   void _onItemTapped(int index) {
@@ -34,11 +36,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //title: Center(
-      // child: const Text('My tickets'),
-      //),
-      //),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
@@ -52,19 +49,21 @@ class _BottomBarState extends State<BottomBar> {
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: const Color(0xFFB7B7B7),
         items: [
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
               label: 'Home'),
-          const BottomNavigationBarItem(
-              icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
-              activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+          BottomNavigationBarItem(
+              icon:
+                  Image.asset("assets/icons/wallet.png", width: 25, height: 25),
+              activeIcon: Image.asset("assets/icons/wallet_filled.png",
+                  width: 25, height: 25),
               label: 'Wallet'),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: const Icon(FluentSystemIcons.ic_fluent_ticket_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_ticket_filled),
               label: 'Tickets'),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: const Icon(FluentSystemIcons.ic_fluent_person_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled),
               label: 'Profile'),
