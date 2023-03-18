@@ -8,8 +8,13 @@ import '../utils/accent_style.dart';
 class CashBack extends StatelessWidget {
   final String title;
   final String percentage;
+  final bool isColor;
 
-  const CashBack({super.key, required this.title, required this.percentage});
+  const CashBack(
+      {super.key,
+      required this.title,
+      required this.percentage,
+      required this.isColor});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +24,9 @@ class CashBack extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 25,
-              backgroundColor: Color.fromARGB(255, 140, 154, 231),
+              backgroundColor: isColor == null
+                  ? Color.fromARGB(255, 129, 80, 80)
+                  : Color(0xffFEEBDD),
             ),
             const Gap(10),
             Column(
