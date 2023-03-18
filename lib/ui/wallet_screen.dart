@@ -109,7 +109,7 @@ class WalletPage extends StatelessWidget {
                         animation: true,
                         animationDuration: 1000,
                         lineHeight: 80.0,
-                        percent: 0.708,
+                        percent: 0.375,
                         backgroundColor: Colors.grey.shade300,
                         center: Text(
                           "Holiday\n AED 3000/8000",
